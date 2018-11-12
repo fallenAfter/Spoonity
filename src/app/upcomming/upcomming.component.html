@@ -1,0 +1,54 @@
+<div class="container">
+  <div class="row">
+    <h1>{{title}}</h1>
+  </div>
+  <div class="row">
+    <div class="col-md-4 next-launch">
+      <div>
+        <img src="{{nextLaunch.rocket.imageURL}}" alt="">
+        <div>
+          <div>
+            <h2>Next Launch</h2>
+            <h3>{{nextLaunch.name}}</h3>
+            <p>{{ getCountry(nextLaunch.location.countryCode) }}</p>
+            <p>{{ nextLaunch.windowstart | date }}</p>
+          </div>
+          <div class="countDown">
+            <table>
+              <tr>
+                <td>Day</td>
+                <td>Hour</td>
+                <td>Minute</td>
+                <td>Seconds</td>
+              </tr>
+              <tr>
+                <td>{{countDown.days}}</td>
+                <td>{{countDown.hours}}</td>
+                <td>{{countDown.minutes}}</td>
+                <td>{{countDown.seconds}}</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <div class="col-md-8">
+      <table class="table table-striped">
+        <tr>
+          <th>Name</th>
+          <th>Status</th>
+          <th>Launch Date</th>
+          <th>Country</th>
+        </tr>
+        <tr *ngFor="let launch of launches.launches">
+          <td>{{launch.name}}</td>
+          <td>{{getLaunchStatus(launch.status)}}</td>
+          <td>{{launch.windowstart | date}}</td>
+          <td>{{launch.location.countryCode}}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,39 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+	background-color: #51ADFF;
+}
+
+
+.table-striped>tbody>tr:nth-of-type(odd){
+	background-color: #5D5EFF;
+}
+.table>tbody>tr>th, .table>tbody>tr>td{
+	border-top:#B051FF;
+}
+.container{
+	margin:0 3em 0 3em;
+}
+.next-launch img{
+	width:100%;
+}
+.next-launch > div{
+	position: relative;
+	height:100%;
+	width:100%;
+}
+.next-launch > div > div:first-of-type{
+	position:absolute;
+	top: 0;
+	height:100%;
+	width:100%;
+}
+.next-launch > div > div:first-of-type > div{
+	padding: 2em;
+}
+
+
+@media (min-width: 1600px){
+	.container{
+		width:90vw;
+	}
+}

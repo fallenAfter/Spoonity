@@ -1,0 +1,43 @@
+header{
+	padding: 1em 2em;
+	background-color: #4973E8
+}
+.group{
+	display:block;
+}
+header label{
+	color: #eee;
+}
+
+.control{
+	width: 200px;
+	display:inline-block;
+	padding:0.4em 1em;
+	margin: 0.2em 1em;
+	border-radius: 20px;
+	border: 2px solid #51ADFF;
+}
+.control:focus{
+	border-color:#B051FF;
+}
+.navbar-brand{
+	color: #eee;
+}
+.control.ng-invalid{
+	border-color:#8f0000;
+}
+.button{
+	padding:0.4em 1em;
+	border-radius: 20px;
+	background-color: #B051FF;
+	color:#eee;
+	border: 2px solid #B051FF;
+}
+.button:hover{
+	background-color:#7549E8;
+	border-color: #7549E8;
+}
+.alert-danger{
+	background-color: inherit;
+	border: 0px;
+}
